@@ -1,0 +1,26 @@
+.online-reserve{
+    // background-color: $white-color;
+
+    .top-menu{
+        // background-color: $white-color;
+        // a{
+        //     color: $orange-color;
+        // }
+    }
+    .header{
+        //  background-color: $darkblue-color;
+    }
+    .dtpicker{
+        @extend .ptb-30;
+        
+    }
+    &__container{
+        @include start-flex;
+        gap:15px;
+        &--right{
+            width: 80%;
+        }
+    }
+   
+
+}

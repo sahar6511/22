@@ -1,0 +1,61 @@
+.room-box{
+    box-shadow : 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    @include column-flex;
+    width: 30%;
+    border-radius: 2px;
+    visibility: visible;
+    .room-box--img{
+        position: relative;
+        img{
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+        div{
+            position: absolute;
+            @include center-flex;
+            @extend .p-10;
+            background-color: $orange-color;
+            color: $white-color;
+            font-size: bold !important;
+            bottom: -5%;
+            left:0;
+            border-radius: 2px;
+        }
+    }
+    // @extend .p-30;
+    .room-box--title{
+        @include spacebetween-flex;
+        @extend .p-30;
+        color: $black-color !important;
+    }
+    .room-box--icon{
+        @include spacebetween-flex;
+        gap:20px;
+            li{
+                @include center-flex;
+                color: $orange-color;
+                gap:4px;
+                
+                span{
+                    border-right: 1px solid #dee2e6!important;
+                    padding:0 1rem!important;
+                    // margin-right: 1rem!important;
+                    color: $primary-color;
+                }
+                .like-unlike{
+                  color: $primary-color;
+                }
+            }
+       
+    }
+    .room-box--info{
+        @extend .p-30;
+        @extend .text-justify
+
+    }
+    .btn{
+        background-color: $darkblue-color;
+       color: $white-color;
+    }
+   
+}
